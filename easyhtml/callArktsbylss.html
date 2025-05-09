@@ -3,17 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<script type = text/javascript>
-			function callArkTs(){
-						let str = MyJS.getFlag();
-						document.getElementById("demo").innerHTML=str;
-						console.info('ArkTS Hello World!:' + str);
-					}
-					alert("get your access token  :" + 111111);
-		</script>
 	</head>
 	<body>
 		<button type="button" onclick="callArkTs()">click me!</button>
 		<p id="demo"></p>
+		<script>
+			function callArkTs(){
+				alert("get your access token  :" + 111111);
+				let str = MyJS.getFlag();
+				document.getElementById("demo").innerHTML=str;
+				console.info('ArkTS Hello World!:' + str);
+				
+			}
+					
+		</script>
 	</body>
 </html>
